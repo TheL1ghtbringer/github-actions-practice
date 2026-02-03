@@ -12,5 +12,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Run echo command
-      run: echo "CI is working!"
+    - name: Show current date
+      run: date
+
+    - name: Show files list
+      run: ls -la
+
+    - name: Show current user
+      run: whoami
